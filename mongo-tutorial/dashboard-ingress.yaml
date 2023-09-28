@@ -1,0 +1,30 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: dashboard-ingress
+  namespace: kubernetes-dashboard
+  labels:
+    name: myingress
+spec:
+  tls:
+    - hosts:
+      - myapp.com
+      secretName: myapp-secret-tls
+  rules:
+  - host: "dru.com"
+    http:
+      paths:
+      - pathType: Prefix
+        path: "/"
+        backend:
+          service:
+            name: kubernetes-dashboard
+            port: 
+              number: 80
+      - pathType: Suffix
+        path: "analytics"
+        backend:
+          service:
+            name: analytics-dashboard # dummy name
+            port:
+              number: 80

@@ -1,0 +1,5 @@
+{
+    "yaml.schemas": {
+        "kubernetes://schema/v1%40service": "file:///home/dru/k8s-practice/mongo-tutorial/mongo-express.yaml"
+    }
+}
