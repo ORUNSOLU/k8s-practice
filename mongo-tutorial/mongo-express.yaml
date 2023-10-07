@@ -60,23 +60,21 @@ spec:
         name: mongo-express
         env:
           - name: ME_CONFIG_MONGODB_ADMINUSERNAME
-            value: "root"
+            value: "admin"
           - name: ME_CONFIG_MONGODB_ADMINPASSWORD
-            value: ""
-          - name: ME_CONFIG_BASICAUTH_USERNAME
-            value: "mongodb"
-          - name: ME_CONFIG_BASICAUTH_PASSWORD
-            value: "mongodb"
-          - name: ME_CONFIG_MONGODB_ENABLE_ADMIN 
-            value: "true"
-          - name: ME_CONFIG_MONGODB_AUTH_DATABASE 
-            value: "admin?replicaset=bd0"
-          - name: ME_CONFIG_MONGODB_AUTH_USERNAME 
-            value: "root"
-          - name: ME_CONFIG_MONGODB_AUTH_PASSWORD 
-            value: ""
+            value: "password"
+          # - name: ME_CONFIG_BASICAUTH_USERNAME
+          #   value: "mongodb"
+          # - name: ME_CONFIG_BASICAUTH_PASSWORD
+          #   value: "mongodb"
+          # - name: ME_CONFIG_MONGODB_ENABLE_ADMIN 
+          #   value: "true"
+          # - name: ME_CONFIG_MONGODB_AUTH_USERNAME 
+          #   value: "root"
+          # - name: ME_CONFIG_MONGODB_AUTH_PASSWORD 
+          #   value: ""
           - name: ME_CONFIG_MONGODB_SERVER
-            value: ""
+            value: "mongodb-service"
         ports:
           - containerPort: 8081
             name: webb
