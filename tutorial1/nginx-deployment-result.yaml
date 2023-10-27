@@ -27,7 +27,7 @@ spec:
     type: RollingUpdate
   template:
     metadata:
-      creationTimestamp: null
+      creationTimestamp: "2023-09-23T18:03:48Z"
       labels:
         app: nginx
     spec:

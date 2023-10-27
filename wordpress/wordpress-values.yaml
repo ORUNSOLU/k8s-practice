@@ -1,8 +1,8 @@
 wordpressUsername: dru96
 wordpressPassword: my-password
-wordpressEmail: dru.oruns@gmail.com
-wordpressFirstName: Dru
-wordpressLastName: Oruns
-wordpressBlogName: Learning helm
+wordpressEmail: oruns@outlook.com
+wordpressFirstName: Dayo
+wordpressLastName: Orunsolu
+wordpressBlogName: Learn Helm!
 service:
   type: NodePort
