@@ -1,0 +1,1 @@
+Contains configuration credentials that can be referenced by the Charts;
